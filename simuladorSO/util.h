@@ -46,11 +46,13 @@ void busca(LISTA *l, int ch);
 void systemCall(LISTA *l);
 void finalizarProcessos(LISTA *l);
 void finalizarProcessosFINALIZADOS(LISTA *l);
+bool buscaPidDEP(LISTA *l, int pidBusca);
 
 //ROTINAS USUARIO
 void exibirProcessosUsuario(LISTA *l);
 int inserirProcessoUsuario(LISTA *l, PROCESSO elem);
 void systemCallUsuario(LISTA *l);
 void finalizarProcessosUsuario(LISTA *l);
+bool buscaPidDEPUsuario(LISTA *l, int pidBusca);
 
 #endif // UTIL_H_INCLUDED

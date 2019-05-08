@@ -46,6 +46,12 @@ if(op == 1){
     novo.estado = BLOQUEADO;
     cout << "PID do processo que este é dependente: ";
     cin >> novo.pidDEP;
+
+	if(buscaPidDEPUsuario(&listaProcessos, novo.pidDEP)== false){
+
+        cout << "Entrada inválida - Processo não adicionado" << endl;
+        goto menu;
+}
     }
     else if (auxChar == 'N' || auxChar == 'n'){
         novo.dependencia = false;

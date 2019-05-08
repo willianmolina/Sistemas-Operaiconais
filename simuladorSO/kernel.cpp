@@ -210,5 +210,22 @@ teste:
 goto teste;
 }
 
+}
 
+
+bool buscaPidDEP(LISTA *l, int pidBusca){
+
+PONT atual = NULL;
+
+atual = l->inicio;
+
+while(atual!=NULL && atual->proce.PID!=pidBusca){
+atual = atual->prox;
+}
+if(atual!= NULL && atual->proce.PID==pidBusca){
+return true;
+}
+else{
+return false;
+}
 }

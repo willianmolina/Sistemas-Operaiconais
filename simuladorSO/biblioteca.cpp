@@ -18,3 +18,7 @@ systemCall(l);
 void finalizarProcessosUsuario(LISTA *l){
 finalizarProcessos(l);
 }
+
+bool buscaPidDEPUsuario(LISTA *l, int pidBusca){
+return buscaPidDEP(l, pidBusca);
+}
