@@ -1,0 +1,4 @@
+Trabalho de Sistemas operacionais.
+
+O trabalho esta incompleto.
+Faltando o arquivo de texto e as 200 iterações do programa.
